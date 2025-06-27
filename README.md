@@ -1,4 +1,4 @@
-# 🏡 ALX Airbnb Database Project
+# 🏡 ALX Airbnb Documnation
 
 This repository documents the full design and implementation of a relational database system for an Airbnb-like platform. The database models real-world operations for a property rental application, including users (hosts, guests, admin), properties, bookings, payments, reviews, and messaging.
 
