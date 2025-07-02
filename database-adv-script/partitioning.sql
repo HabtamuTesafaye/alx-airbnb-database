@@ -1,12 +1,3 @@
--- Run EXPLAIN ANALYZE again after optimizations
-EXPLAIN ANALYZE
-SELECT b.booking_id, b.start_date, b.total_price, u.first_name, u.email, p.name AS property_name
-FROM bookings_partitioned b
-JOIN users u ON b.user_id = u.user_id
-JOIN properties p ON b.property_id = p.property_id
-WHERE b.start_date BETWEEN '2025-07-01' AND '2025-07-31';
-
-
 -- Create partitioned table
 CREATE TABLE bookings_partitioned (
   booking_id UUID DEFAULT uuid_generate_v4(),
